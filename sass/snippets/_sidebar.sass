@@ -1,0 +1,47 @@
+/* The side navigation menu */
+.sidenav
+    height: 100%
+    width: 210px
+    position: fixed
+    z-index: 1000
+    top: 0
+    left: 0
+    background-color: #111
+    overflow-x: hidden
+    transition: 0.3s
+
+
+/* The navigation menu links */
+
+.sidenav ul
+  list-style-type: none
+  display: table-cell
+  vertical-align: middle
+  height: 700px
+  padding: 0 20px
+  transition: 0.3s
+
+.sidenav ul li a
+  text-decoration: none
+  font-size: 12px
+  display: block
+  transition: 0.3s
+  margin-bottom: 30px
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus
+    color: #f1f1f1
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#website
+    transition: margin-left 0.3s
+
+
+.nav-inactive
+  color: #818181
+
+.active
+  color: #fff

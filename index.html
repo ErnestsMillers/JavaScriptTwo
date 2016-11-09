@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ernests Millers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="mediaq.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--********************************************************************
+            INTRODUCTION
+    *********************************************************************-->
+  <div id="website">
+    <section id="intro">
+      <footer id="introtext" class="section">
+        <h3>The purpose of this website</h3>
+        <p>This website main purpose is to increase my knowledge of JavaScript,
+        here I practise and try to understand many design patterns of different content panels.</p>
+        <p>I will provide JavaScript scripts for anyone willing to understand
+        or see how any part of the website works and is created. The main resource
+        where I will generate my ideas from is from a book I read <cite>
+        Javascript and jQuery by Jon Duckett</cite>, the ideas will be taken from it
+        while I will learn from using the example code and somehow changing it
+        and developing slightly advanced JavaScript.</p>
+      </footer>
+    </section>
+
+    <!--********************************************************************
+            SECTION ONE - ACCORDION
+    *********************************************************************-->
+
+    <section id="sectionone" class="section blue">
+      <header>
+        <h3>Accordion</h3>
+        <p>By using event object with simple 7 jQuery lines we can create accordion.</p>
+        <ul>
+          <li>Event object.</li>
+          <li>.next, .not, .slideToggle() methods.</li>
+        </ul>
+        <p>The purpose of this content panel is to show information by sliding it down.
+        It works by using event object that checks if the tab content tab has class of
+        .animated and then by using slideToggle function it simply opens and closes.</p>
+      </header>
+      <article>
+
+        <ul class="accordion">
+          <li>
+            <button class="accordion-control">Classics</button>
+            <div class="accordion-panel">
+              <p>In varius mauris ut pellentesque molestie. Nulla et semper eros, ut volutpat tellus. Ut mattis nulla sed lectus mattis dignissim. Nam auctor tempus aliquet. Aenean erat orci, lobortis a risus id, ornare cursus erat. Etiam eu magna sed leo tristique varius. Pellentesque laoreet tortor eu facilisis mattis. Mauris sit amet arcu nulla. Aliquam ullamcorper lorem dui.</p>
+            </div>
+          </li>
+          <li>
+            <button class="accordion-control">The flower</button>
+            <div class="accordion-panel">
+              <p>Ut mattis nulla sed lectus mattis dignissim. Nam auctor tempus aliquet. Aenean erat orci, lobortis a risus id, ornare cursus erat.</p>
+            </div>
+          </li>
+          <li>
+            <button class="accordion-control">The Sea</button>
+            <div class="accordion-panel">
+              <p>Praesent consequat lacus at rutrum ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sed erat leo. Quisque fringilla eros id tellus tincidunt, vitae viverra neque fringilla.</p>
+            </div>
+          </li>
+        </ul>
+
+        <script src="js/sectionone.js"></script>
+
+      </article>
+      <footer>
+        <a href="js/sectionone.js"><button class="button">View JavaScript Code</button></a>
+      </footer>
+    </section>
+
+    <!--********************************************************************
+            SECTION TWO - TABBED PANEL
+    *********************************************************************-->
+
+    <section id="sectiontwo" class="section purple">
+      <header>
+        <h3>Tabbed panel</h3>
+        <p>This script creates functional tabbed panel.</p>
+        <ul>
+          <li>Event object.</li>
+          <li>If statement.</li>
+          <li>jQuery .removeClass, .addClass, .find, .attr functions.</li>
+        </ul>
+        <p>The way this script works is by hiding other tabs and showing only one.
+        It changes the class of tab and its link when clicked on at the same time
+        deleting the active class for tabs that doesn't need to be shown.</p>
+      </header>
+      <article>
+
+        <ul class="tab-list">
+          <li class="activetab"><a href="#tab-1" class="tab-control">Description</a></li>
+          <li><a href="#tab-2" class="tab-control">Ingredients</a></li>
+          <li><a href="#tab-3" class="tab-control">Delivery</a></li>
+        </ul>
+        <div class="tab-panel activetab" id="tab-1">Praesent consequat lacus at rutrum ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sed erat leo. Quisque fringilla eros id tellus tincidunt, vitae viverra neque fringilla.</div>
+        <div class="tab-panel" id="tab-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu nisi quis neque commodo pharetra sed eget nisi. Fusce in lorem nec libero varius cursus at in est. Nunc libero erat, imperdiet ut ultricies ac, luctus tempor mi.</div>
+        <div class="tab-panel" id="tab-3">Etiam eu magna sed leo tristique varius. Pellentesque laoreet tortor eu facilisis mattis. Mauris sit amet arcu nulla. Aliquam ullamcorper lorem dui.</div>
+
+        <script src="js/sectiontwo.js"></script>
+
+      </article>
+      <footer>
+        <a href="js/sectiontwo.js"><button class="button2">View JavaScript Code</button></a>
+      </footer>
+    </section>
+
+    <!--********************************************************************
+            SECTION THREE - PHOTO VIEWER
+    *********************************************************************-->
+
+    <section id="sectionthree" class="section blue">
+      <header>
+        <h3>Photo Viewer</h3>
+        <p>This sript creates functional Photo Viewer and it also involves, asynchrononous
+        loading and image caching.</p>
+        <ul>
+          <li>JavaScript cache object.</li>
+          <li>.fade, .stop., .eq, and more jQuery functions.</li>
+          <li>Event listeners and objects.</li>
+          <li>Caching images.</li>
+        </ul>
+        <p>The way this script works is by creating a cache object where each picture
+        will be loaded and then kept if user presses on any of thumbnails again, it is done by IF
+        statement that checks whether or not image is in cache object which launches another function
+        that shows the loading GIF while picture is loaded at first.</p>
+      </header>
+      <article>
+
+        <section class="page panel">
+          <div class="gallery">
+            <div id="photo-viewer"></div>
+            <div id="thumbnails">
+              <a href="img/photo-1.jpg" class="thumb activepic" title="Elderberry Marshmallow"><img src="img/thumb-1.jpg" alt="Elderberry Marshmallow" /></a>
+              <a href="img/photo-2.jpg" class="thumb" title="Rose Marshmallow"><img src="img/thumb-2.jpg" alt="Rose Marshmallow" /></a>
+              <a href="img/photo-3.jpg" class="thumb" title="Crysanthemum Marshmallow"><img src="img/thumb-3.jpg" alt="Crysanthemum Marshmallow" /></a>
+            </div>
+          </div>
+          <div class="description">
+            <p class="standfirst">Take your tastebuds for a gentle stroll through an English garden filled with Monsieur Pigeon's beautifully fragrant Flower Series marshmallows.</p>
+            <p>With three sweetly floral options: <strong>Elderberry</strong>, <strong>Rose Petal</strong>, and <strong>Chrysanthemum</strong> - all edible and all naturally flavored - they will have you dreaming of butterflies and birdsong in no time.</p>
+            <p><strong>$5.75</strong> / 3.5 oz packet</p>
+            <a href="" id="buy">Buy now</a>
+          </div>
+        </section>
+
+      <script src="js/sectionthree.js"></script>
+      </article>
+      <footer>
+        <a href="js/sectionthree.js"><button class="button">View JavaScript Code</button></a>
+      </footer>
+    </section>
+
+    <!--********************************************************************
+            SECTION FOUR - PHOTO SLIDER
+    *********************************************************************-->
+
+    <section id="sectionfour" class="section purple">
+      <header>
+        <h3>Photo Slider</h3>
+        <p>This photo slider can slide images from left to right and it also slides images
+        automatically every four seconds.</p>
+        <ul>
+          <li>.each ,.length, .append, .css jQuery functions.</li>
+          <li>Array to store buttons.</li>
+          <li>Multiple functions and if statements.</li>
+        </ul>
+        <p>This script works by positioning images next to each other but only shows
+        one at a time. It assigns index to each slide and gives each button a link to each index,
+        the index also changes the way images comes in.</p>
+      </header>
+      <article>
+
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img src="img/slide-1.jpg" alt="No two are the same" />
+              </div>
+              <div class="slide slide-2">
+                <img src="img/slide-2.jpg" alt="Monsieur Mints" />
+              </div>
+              <div class="slide slide-3">
+                <img src="img/slide-3.jpg" alt="The Flower Series" />
+              </div>
+              <div class="slide slide-4">
+                <img src="img/slide-4.jpg" alt="Salt o' The Sea" />
+              </div>
+            </div>
+          </div>
+          <div class="slide-buttons"></div>
+        </div>
+
+        <script src="js/sectionfour.js"></script>
+
+      </article>
+      <footer>
+        <a href="js/sectionfour.js"><button class="button2">View JavaScript Code</button></a>
+      </footer>
+    </section>
+
+    <!-- SIDEBAR -->
+
+    <div id="mySidenav" class="sidenav">
+      <ul>
+        <li><a href="#introtext" class="nav-inactive">Introduction</a></li>
+        <li><a href="#sectionone" class="nav-inactive">Accordion</a></li>
+        <li><a href="#sectiontwo" class="nav-inactive">Tabbed Panel</a></li>
+        <li><a href="#sectionthree" class="nav-inactive">Photo Viewer</a></li>
+        <li><a href="#sectionfour" class="nav-inactive">Photo Slider</a></li>
+      </ul>
+    </div>
+
+    <!--********************************************************************
+            SCRIPTS
+    *********************************************************************-->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>
